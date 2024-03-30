@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./style/style.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.10.6"
+  }
+}

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>master shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/HomePage.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <header class="header mt-4">
+        <section class="w-[456px] h-[955px] absolute right-0 bg-white top-0 z-10 popup ">
+            <div class="popup_header flex mt-12 mx-8 justify-between items-center text-grays6">
+                <h2 class="popup_title">Shoping card (<span>2</span>)</h2>
+                <i class="fa fa-close text-2xl close_btn"></i>
+            </div>
+            <div class="product_row mt-5">
+                <div class="product_user flex justify-between items-center mx-6 border-b border-grays3 border-solid">
+                    <img src="./image/orange.png" alt="" class="w-32">
+                    <div class="productinfo">
+                        <p class="product_name">Fresh Indian Orange</p>
+                        <p class="product_details">$12</p>
+                    </div>
+                    <i class="fa fa-remove"></i>
+                </div>
+                <div class="product_user flex justify-between items-center mx-6 border-b border-grays3 border-solid">
+                    <img src="./image/orange.png" alt="" class="w-32">
+                    <div class="productinfo">
+                        <p class="product_name">Fresh Indian Orange</p>
+                        <p class="product_details">$12</p>
+                    </div>
+                    <i class="fa fa-remove"></i>
+                </div>
+                <div class="product_user flex justify-between items-center mx-6 border-b border-grays3 border-solid">
+                    <img src="./image/orange.png" alt="" class="w-32">
+                    <div class="productinfo">
+                        <p class="product_name">Fresh Indian Orange</p>
+                        <p class="product_details">$12</p>
+                    </div>
+                    <i class="fa fa-remove"></i>
+                </div>
+            </div>
+            <div class="mt-[20rem]">
+                <div class="flex justify-around">
+                    <p class="product_count"><span>3</span> product</p>
+                    <p class="proucts_price">$36</p>
+                </div>
+                <div class="flex justify-center flex-col items-center mt-4">
+                    <button class="w-[356px] h-12 bg-primary text-white rounded-3xl mt-4">Wishlist</button>
+                    <button class="w-[356px] h-12 bg-primary text-white rounded-3xl mt-4">go to panel</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="small_navbar text-gray-500 text-xs border-b-gray-200 border-b border-solid flex items-center justify-center">
+            <div class="container">
+                <div class="row">
+                    <div class="leftnav_small">
+                        <h5 class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Store Location: Lincoln- 344, Illinois, Chicago, USA
+                        </h5>
+                    </div>
+                    <div class="rightnav_small">
+                        <div class="nav_small_links text-gray-400 pl-3">
+                            <a href="#" class="nav_small_link">
+                                eng
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <a href="#" class="nav_small_link">
+                                usd
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <a href="#" class="nav_small_link">
+                                sign in / sign up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="midle mt-4 flex items-center justify-center md:w-full">
+            <div class="container">
+                <div class="row max-sm:mx-6">
+                    <div class="logo_images max-lg:hidden max-xd:hidden">
+                        <img src="./image/logoshop.png" alt="" class="logo_images">
+                    </div>
+                    <i class="fa fa-list hidden max-md:block"></i>
+                    <div class="search_bar max-md:hidden">
+                        <input type="text" placeholder="search" class=" border border-solid border-gray-300 rounded-md p-4 max-w-96 h-12 lg:">
+                        <button class=" bg-primary h-[50px] w-[100px] text-white rounded-r-lg">search</button>
+                    </div>
+                    <div class="navbar_icons">
+                        <div class="flex">
+                            <a href="./public/Dashborad.html" class="dashboardbtn max-md:hidden">
+                                <button class="w-32 text-white h-12 bg-primary rounded-full">dashboard</button>    
+                            </a>
+                            <div class="carts flex ml-[15px]">
+                                <img src="./image/Cart.png" alt="" class="openpopup">
+                                <div class="info ml-[15px]">
+                                    <p class="prices">shopping cart :</p>
+                                    <p class="price font-bold">
+                                        <span>$</span> 00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2 login_btn">
+                        <a href="./public/loginpage.html">
+                            <button class="w-[140px] h-11 bg-primary mt-6 text-white rounded-xl">login
+                                <i class="fa fa-user pl-4 text-lg"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-64 h-full fixed top-0 -left-96 bg-slate-100 z-50 overflow-y-hidden">
+            <div>
+                <input type="text" class="h-12 mt-8 ml-4 p-4 rounded-xl w-56" placeholder="search">
+                <button class="-ml-8"><i class="fa fa-search"></i></button>
+            </div>
+
+            <ul class="flex flex-col items-center justify-center mt-8">
+                <li class="mt-8">home</li>
+                <li class="mt-8">shop</li>
+                <li class="mt-8">pages</li>
+                <li class="mt-8">blog</li>
+                <li class="mt-8">about us</li>
+                <li class="mt-8">contact us</li>
+                <li class="mt-8">dashboard</li>
+            </ul>
+        </section>
+
+        <section class=" bg-[#333333] text-[#999999] h-[80px] mt-[15px] flex items-center justify-center max-md:hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar_left">
+                        <ul class="navlists flex items-center justify-center list-none">
+                            <li class="navlist">home<i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">shop <i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">pages <i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">blog <i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">about us</li>
+                            <li class="navlist">contact us</li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <img src="./image/PhoneCall 1.png" alt="">
+                        <p class="phone_number">(219) 555-0114</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="main">
+
+        <section class="banner flex justify-center mt-10">
+            <div class="container flex justify-between max-2xl:justify-center ">
+                <div class="row max-xl:flex-wrap">
+                    <div class="leftbanner ">
+                        <img src="./image/Bannar Big.png" alt="" class="max-w-[873px] max-xl:w-full">
+                    </div>
+                    <div class="rightbanner 2xl:ml-24 max-w-[450px] max-lg:flex-wrap max-lg:max-w-[800px]  max-xl:flex mt-8">
+                        <img src="./image/Bannar1.png" alt="" class="block mb-7 max-xl:w-full">
+                        <img src="./image/Bannar.png" alt="" class="max-2xl:ml-6 max-xl:w-full max-sm:ml-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Featureds flex justify-center mt-10 flex-wrap">
+            <div class="container">
+                <div class="row flex-wrap max-sm:grid max-md:grid-cols-2">
+                    <div class="Featured  text-grays3 mt-8 max-w-96 ml-12">
+                        <img src="./image/delivery-truck 1.png" alt="">
+                        <div>
+                            <h4 class="Featured_title">Free Shipping</h4>
+                            <p class="Featured_text">Free shipping on all your order</p>
+                        </div>
+                    </div>
+                    <div class="Featured mt-8 max-w-96 ml-12">
+                        <img src="./image/headphones 1.png" alt="">
+                        <div>
+                            <h4 class="Featured_title">Customer Support 24/7</h4>
+                            <p class="Featured_text">Instant access to Support</p>
+                        </div>
+                    </div>
+                    <div class="Featured mt-8 max-w-96 ml-12">
+                        <img src="./image/shopping-bag.png" alt="">
+                        <div>
+                            <h4 class="Featured_title">100% Secure Payment</h4>
+                            <p class="Featured_text">We ensure your money is save</p>
+                        </div>
+                    </div>
+                    <div class="Featured mt-8 max-w-96 ml-12">
+                        <img src="./image/package.png" alt="">
+                        <div>
+                            <h4 class="Featured_title">Money-Back Guarantee</h4>
+                            <p class="Featured_text">30 Days Money-Back Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Categories flex justify-center mt-16">
+            <div class="container">
+
+                    <div class="Categories_header mb-4 flex justify-between">
+                        <h2 class="Categories_title">Popular Categories</h2>
+                        <div class="flex w-40">
+                            <p class="mr-8">View All</p>
+                            <img src="./image/arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Categorie_row flex items-center justify-between flex-wrap mt-14 max-sm:grid max-sm:grid-cols-2 max-xd:grid-cols-1 max-xd:justify-items-center">
+                        
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 1.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Fresh Fruit</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 2.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Fresh Vegetables</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 3.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Meat & Fish</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 4.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Snacks</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 5.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Beverages</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 6.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Beauty & Health</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 7.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Bread & Bakery</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 8.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Baking Needs</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 9.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Cooking</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 10.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Diabetic Food</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 11.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Dish Detergents</p>
+                        </div>
+                        <div class="Categorie w-[220px] h-[200px] border border-solid border-[#e6e6e6] mb-4">
+                            <img src="./image/image 12.png" alt="">
+                            <p class="Categorie_text text-center mt-4">Oil</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="products flex justify-center mt-8">
+            <div class="container ">
+                <div class="Categories_header flex justify-between mb-8">
+                    <h3>Popular Products</h3>
+                    <div class="flex">
+                        <p>View All</p>
+                        <img src="./image/arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="products_row flex items-center justify-between flex-wrap mb-[10px] max-md:justify-center">
+                </div>
+            </div>
+        </section>
+
+        <section class="offers flex justify-center mt-16">
+            <div class="container">
+                <div class="row flex-wrap max-md:justify-center">
+                    <div class="offer max-w-[430px] min-w-[350px] h-[550px] bg-offer1 text-white flex items-center flex-col bg-no-repeat text-center transition ease-in delay-300 hover:scale-110">
+                        <p class="offer_text text-center mt-6">best deals</p>
+                        <h2 class="offer_title text-center text-4xl mb-10 mt-10">Sale of the Month</h2>
+                            <div class="timers flex justify-center items-center flex-col">
+                                <div class="offer_timer flex justify-around items-center w-[300px]">
+                                    <p class="day">0</p>
+                                    <span>:</span>
+                                    <p class="hour">0</p>
+                                    <span>:</span>
+                                    <p class="minute">0</p>
+                                    <span>:</span>
+                                    <p class="second">0</p>
+                                </div>
+                                <div class="offer_time flex justify-between w-[300px]">
+                                    <p class="days">days</p>
+                                    <p class="hours">hours</p>
+                                    <p class="minutes">minutes</p>
+                                    <p class="seconds">seconds</p>
+                                </div>
+                            </div>
+                        <button class="shop_btn flex justify-center items-center bg-white w-32 text-primary h-12 mt-8 rounded-3xl">
+                            shop now
+                            <img src="./image/arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="offer max-w-[430px] min-w-[350px] h-[550px] bg-offer2 text-white flex items-center flex-col bg-no-repeat text-center transition ease-in delay-300 hover:scale-110">
+                        <p class="offer_text text-center mt-6">85% Fat Free</p>
+                        <h2 class="offer_title text-center text-4xl mb-10 mt-10">Low-Fat Meat</h2>
+                        <p class="offer_sale">Started at
+                            <span class="text-Warning">$79.99</span>
+                        </p>
+                        <button class="shop_btn flex justify-center items-center bg-white w-32 text-primary h-12 mt-8 rounded-3xl">
+                            shop now
+                            <img src="./image/arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="offer max-w-[430px] min-w-[350px] h-[550px] bg-offer3 text-white flex items-center flex-col bg-no-repeat text-center transition ease-in delay-300 hover:scale-110">
+                        <p class="offer_text text-center mt-6  text-[#1a1a1a]">Summer Sale</p>
+                        <h2 class="offer_title text-center text-4xl  text-[#1a1a1a] mb-10 mt-10">100% Fresh Fruit</h2>
+                            <p class="up_to text-[#1a1a1a] font-bold text-xl">up to 64% offer</p>
+                        <button class="shop_btn flex justify-center items-center bg-white w-32 text-primary h-12 mt-8 rounded-3xl">
+                            shop now
+                            <img src="./image/arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Featured_products flex justify-center mt-12 bg-[#fafafa]">
+            <div class="container  ">
+                    <div class="Categories_header flex justify-between mt-5">
+                        <h3>Featured Products</h3>
+                        <div class="flex">
+                            <p>View All</p>
+                            <img src="./image/arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="product_row flex flex-wrap justify-between items-center mt-6 max-sm:justify-center mb-6">
+                        <div class="product border border-solid border-[#99999950] w-[264px] mt-4">
+                            <img src="./image/cabbage.png" alt="">
+                                <div class="product_infos">
+                                    <div class="product_info">
+                                            <p class="prodect_name">Chinese cabbage</p>
+                                            <p class="product_price">$12.00</p>
+                                            <p class="product_offer"></p>
+                                            <img src="./image/Rating.png" alt="" class="mb-4">
+                                        </div>
+                                    <div class="product_buy">
+                                        <img src="./image/Rectangle.png" alt="">
+                                </div>
+                          </div>
+                        </div>
+                        <div class="product border border-solid border-[#99999950] w-[264px] mt-4">
+                            <img src="./image/Green Lettuce.png" alt="">
+                                <div class="product_infos">
+                                    <div class="product_info">
+                                            <p class="prodect_name">Green Lettuce</p>
+                                            <p class="product_price">$9.00</p>
+                                            <p class="product_offer"></p>
+                                            <img src="./image/Rating.png" alt="" class="mb-4">
+                                        </div>
+                                    <div class="product_buy">
+                                        <img src="./image/Rectangle.png" alt="">
+                                </div>
+                          </div>
+                        </div>
+                        <div class="product border border-solid border-[#99999950] w-[264px] mt-4">
+                            <img src="./image/potato.png" alt="">
+                                <div class="product_infos">
+                                    <div class="product_info">
+                                            <p class="prodect_name">potato</p>
+                                            <p class="product_price">$20.00</p>
+                                            <p class="product_offer"></p>
+                                            <img src="./image/Rating.png" alt="" class="mb-4">
+                                        </div>
+                                    <div class="product_buy">
+                                        <img src="./image/Rectangle.png" alt="">
+                                </div>
+                          </div>
+                        </div>
+                        <div class="product border border-solid border-[#99999950] w-[264px] mt-4">
+                            <img src="./image/corn.png" alt="">
+                                <div class="product_infos">
+                                    <div class="product_info">
+                                            <p class="prodect_name">corn</p>
+                                            <p class="product_price">$19.00</p>
+                                            <p class="product_offer"></p>
+                                            <img src="./image/Rating.png" alt="" class="mb-4">
+                                        </div>
+                                    <div class="product_buy">
+                                        <img src="./image/Rectangle.png" alt="">
+                                </div>
+                          </div>
+                        </div>
+                        <div class="product border border-solid border-[#99999950] w-[264px] mt-4">
+                            <img src="./image/Green Capsicum.png" alt="">
+                                <div class="product_infos">
+                                    <div class="product_info">
+                                            <p class="prodect_name">Green Capsicum</p>
+                                            <div>
+                                                <p class="product_price">$9.00</p>
+                                                <p class="product_offer">$20.00</p>
+                                            </div>
+                                            <img src="./image/Rating.png" alt="" class="mb-4">
+                                        </div>
+                                    <div class="product_buy">
+                                        <img src="./image/Rectangle.png" alt="">
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="newses flex justify-center mt-16">
+            <div class="container ">
+                <h2 class="newses_title text-center mb-8 text-gray-700 text-xl">lastest news</h2>
+                <div class="row flex-wrap max-lg:justify-center">
+
+                    <div class="news w-[420px]  mt-6 border">
+                        <img src="./image/news1.png" alt="" class="news_image">
+                        <div class="news_info flex justify-between mb-6 text-grays6 mt-2">
+                            <p class="news_tag">
+                                <i class="fa fa-tags"></i>
+                                food
+                            </p>
+                            <p class="news_writer">
+                                <i class="fa fa-user"></i>
+                                by admin
+                            </p>
+                            <p class="news_comment">
+                                <i class="fa fa-comment"></i>
+                                comment 65
+                            </p>
+                        </div>
+                        <p class="news_title">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.
+                        </p>
+                        <p class="readmore mt-7 text-primary flex justify-between">
+                            read more
+                            <img src="./image/arrow.svg" alt="">
+                        </p>
+                    </div>
+                    <div class="news w-[420px] mt-6">
+                        <img src="./image/news2.png" alt="" class="news_image">
+                        <div class="news_info flex justify-between mb-6 text-grays6 mt-2">
+                            <p class="news_tag">
+                                <i class="fa fa-tags"></i>
+                                food
+                            </p>
+                            <p class="news_writer">
+                                <i class="fa fa-user"></i>
+                                by admin
+                            </p>
+                            <p class="news_comment">
+                                <i class="fa fa-comment"></i>
+                                comment 99
+                            </p>
+                        </div>
+                        <p class="news_title">
+                            Eget lobortis lorem lacinia. Vivamus pharetra semper,
+                        </p>
+                        <p class="readmore mt-7 text-primary flex justify-between">
+                            read more
+                            <img src="./image/arrow.svg" alt="">
+                        </p>
+                    </div>
+                    <div class="news w-[420px] mt-6">
+                        <img src="./image/news3.png" alt="" class="news_image">
+                        <div class="news_info flex justify-between mb-6 text-grays6 mt-2">
+                            <p class="news_tag">
+                                <i class="fa fa-tags"></i>
+                                food
+                            </p>
+                            <p class="news_writer">
+                                <i class="fa fa-user"></i>
+                                by admin
+                            </p>
+                            <p class="news_comment">
+                                <i class="fa fa-comment"></i>
+                                comment 12
+                            </p>
+                        </div>
+                        <p class="news_title">
+                            Maecenas blandit risus elementum mauris malesuada.
+                        </p>
+                        <p class="readmore mt-7 text-primary flex justify-between">
+                            read more
+                            <img src="./image/arrow.svg" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="user_comments flex items-center justify-center bg-[#F2F2F2] mt-12 ">
+            <div class="container">
+                <h2 class="comment_title text-grays3 text-xl text-center mt-8">Client Testimonials</h2>
+                <div class="row flex-wrap max-lg:justify-center">
+                     <div class="comment bg-white mr-7 w-[420px] rounded-xl my-12 ">
+                        <img src="./image/qsss.png" alt="" class="image_qq  mt-6 ml-4 ">
+                        <p class="comment_text text-grays3 mt-8 ml-4">
+                            Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+                        </p>
+                        <div class="comment_info flex justify-between mt-12 mb-6 ml-4">
+                            <div class="flex items-center">
+                                <img src="./image/robert.png" alt="">
+                                <p class="writer_name ml-4">robert fox</p>
+                            </div>
+                            <img src="./image/Rating.png" alt="" class="rating object-contain mr-5">
+                        </div>
+                     </div>
+                     <div class="comment bg-white mr-7 w-[420px] rounded-xl my-12 ">
+                        <img src="./image/qsss.png" alt="" class="image_qq mt-6 ml-4 ">
+                        <p class="comment_text text-grays3 mt-8 ml-4">
+                            Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+                        </p>
+
+                        <div class="comment_info flex justify-between mt-12 mb-6 ml-4">
+                            <div class="flex items-center">
+                                <img src="./image/diane.png" alt="">
+                                <p class="writer_name ml-4">Dianne Russell</p>
+                            </div>
+                            <img src="./image/Rating.png" alt="" class="rating object-contain mr-5">
+                        </div>
+                     </div>
+                     <div class="comment bg-white mr-7 w-[420px] rounded-xl my-12 ">
+                        <img src="./image/qsss.png" alt="" class="image_qq mt-6 ml-4 ">
+                        <p class="comment_text text-grays3 mt-8 ml-4">
+                            Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget
+                        </p>
+
+                        <div class="comment_info flex justify-between mt-12 mb-6 ml-4">
+                            <div class="flex items-center">
+                                <img src="./image/eleaner.png" alt="">
+                                <p class="writer_name ml-4">Eleanor Pena</p>
+                            </div>
+                            <img src="./image/Rating.png" alt="" class="rating  object-contain mr-5">
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="compayns flex justify-center mt-12 mb-5">
+            <div class="container">
+                <div class="row max-xd:flex-wrap">
+                        <img  src="./image/steps.png" alt="">
+                        <img  src="./image/mango-1.png" alt="">
+                        <img  src="./image/food.png" alt="">
+                        <img  src="./image/foods.png" alt="">
+                        <img  src="./image/gserr.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="social-medias flex justify-center mt-24 mb-10">
+            <div class="container">
+                <h2 class="text-center text-gray-700 text-2xl mb-12">gallary image</h2>
+                <div class="row justify-between flex-wrap max-sm:justify-center">
+                        <img src="./image/Instagram Post.png" alt="" class="ml-8 mt-6">
+                        <img src="./image/Instagram Post1.png" alt="" class="ml-8 mt-6">
+                        <img src="./image/Instagram Post2.png" alt="" class="ml-8 mt-6">
+                        <img src="./image/Instagram Post3.png" alt="" class="ml-8 mt-6">
+                        <img src="./image/Instagram Post4.png" alt="" class="ml-8 mt-6">
+                        <img src="./image/Instagram Post 5.png" alt="" class="ml-8 mt-6">
+                </div>
+            </div>
+        </section>
+        </main>
+        
+
+        <footer class="footer">
+            <section class="newletter flex justify-center bg-[#F7F7F7] mt-14">
+                <div class="container mt-14 mb-12">
+                    <div class="row flex-wrap">
+                        <div class="newsletter_left">
+                            <h2 class="newsletter-title mb-14 ">Subcribe our Newsletter</h2>
+                            <p class="newsletter_text text-gray-500">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. <br> Phasellus imperdiet elit eu magna.</p>
+                        </div>
+                        <div class="newsletter_center mt-12">
+                            <input type="email" placeholder="Your email address" class="bg-white h-14 rounded-[46px] w-[460px] pl-6 max-sm:w-80 max-xd:w-52">
+                            <button class="h-[52px] w-40 bg-primary text-white rounded-[40px] -ml-20 max-xd:w-28 max-xd:-ml-6">Subscribe</button>
+                        </div>
+                        <div class="newsletter_right flex justify-between w-44 mt-12">
+                            <a href="https://www.instagram.com/silvershade225?igsh=MXBwN3NjY3lvc3U3bQ==">
+                                <i class="fa fa-instagram text-2xl hover:text-primary transition delay-300"></i>
+                            </a>
+                            <a href="https://github.com/Silvershade1">
+                                <i class="fa fa-github text-2xl hover:text-primary transition delay-300"></i>
+                            </a>
+                            <a href="https://t.me/silver_shade1">
+                                <i class="fa fa-telegram text-2xl hover:text-primary transition delay-300"></i>
+                            </a>
+                            <a href="https://x.com/Silvershad68869?t=zCrJOP6lC4WahOIUtiLQcA&s=09">
+                                <i class="fa fa-twitter text-2xl hover:text-primary transition delay-300"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer bg-[#1A1A1A] text-[#999999] flex justify-center">
+                <div class="container mt-14 mb-10">
+                    <div class="row flex-wrap max-lg:flex-col max-lg:items-start">
+                        <div class="account_info mt-12">
+                            <div class="flex mb-8">
+                                <img src="./image/logoweb.png" alt="">
+                                <h2 class="ml-10 hover:text-white text-xl" >Ecobazar</h2>
+                            </div>
+                            <p>Morbi cursus porttitor enim lobortis molestie. <br> Duis gravida turpis dui, eget  <br> bibendum magna congue nec.</p>
+                            <div class="flex items-center mt-6 text-orange-500">
+                                <p class="phone_number">(219) 555-0114</p>
+                                <span class="mr-3 ml-3">or</span>
+                                <p class="id">@silver_shade1</p>
+                            </div>
+                        </div>
+                        <div class="my_account mt-12">
+                            <h3 class="text-white">account</h3>
+                            <ul>
+                                <li><a href="https://github.com/Silvershade1">my github</a> </li>
+                                <li><a href="https://t.me/silver_shade1">my telegram</a> </li>
+                                <li><a href="https://www.instagram.com/silvershade225?igsh=MXBwN3NjY3lvc3U3bQ==">my instagram</a> </li>
+                                <li><a href="https://x.com/Silvershad68869?t=zCrJOP6lC4WahOIUtiLQcA&s=09">my tweeter</a> </li>
+                            </ul>
+                        </div>
+                        <div class="helps mt-12">
+                            <h3 class="text-white">helps</h3>
+                            <ul>
+                                <li>Contact</li>
+                                <li>Faqs</li>
+                                <li>Terms & Condition</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                        <div class="proxys mt-12">
+                            <h3 class="text-white">helps</h3>
+
+                            <ul>
+                                <li>Track Order</li>
+                                <li>Product</li>
+                                <li>Shop</li>
+                                <li>About</li>
+                            </ul>
+                        </div>
+                        <div class="Categories mt-12">
+                            <h3 class="text-white">helps</h3>
+
+                            <ul>
+                                <li>Fruit & Vegetables</li>
+                                <li>Meat & Fish</li>
+                                <li>Bread & Bakery</li>
+                                <li>Beauty & Health</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="copyright flex justify-center bg-[#1a1a1a]">
+                <div class="container border-t border-solid border-grays6">
+                    <div class="row mt-8 flex-wrap">
+                        <div class="copyright_text">
+                            <p class="text-grays6 transition delay-400 ease-in">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+                        </div>
+                        <div class="flex justify-between mt-12">
+                            <img src="./image/Method=ApplePay.png" alt="" class="mr-3">
+                            <img src="./image/Method=Visa.png" alt="" class="mr-3">
+                            <img src="./image/Method=Discover.png" alt="" class="mr-3">
+                            <img src="./image/Method=Mastercard.png" alt="" class="mr-3">
+                            <img src="./image/paycart.png" alt="" class="mr-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>        
+
+        <script  src="./script/script.js"></script>
+        <script type="module" src="./script/showproduct.js"></script>
+</body>
+</html>
