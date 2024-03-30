@@ -2,7 +2,7 @@ import { product } from "./userdata.js";
 
 // select element
 let products = document.querySelector(".products")
-console.log(products)
+
 
 
 product.forEach((item ) => {
