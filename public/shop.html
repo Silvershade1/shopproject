@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/HomePage.css">
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+<body>
+
+    <header class="header mt-4">
+        <section class="w-[456px] h-[955px] absolute right-0 bg-white top-0 z-10 popup ">
+            <div class="popup_header flex mt-12 mx-8 justify-between items-center text-grays6">
+                <h2 class="popup_title">Shoping card (<span>2</span>)</h2>
+                <i class="fa fa-close text-2xl close_btn"></i>
+            </div>
+            <div class="product_row mt-5">
+                <div class="product_user flex justify-between items-center mx-6 border-b border-grays3 border-solid">
+                    <img src="../image/orange.png" alt="" class="w-32">
+                    <div class="productinfo">
+                        <p class="product_name">Fresh Indian Orange</p>
+                        <p class="product_details">$12</p>
+                    </div>
+                    <i class="fa fa-remove"></i>
+                </div>
+                <div class="product_user flex justify-between items-center mx-6 border-b border-grays3 border-solid">
+                    <img src="../image/orange.png" alt="" class="w-32">
+                    <div class="productinfo">
+                        <p class="product_name">Fresh Indian Orange</p>
+                        <p class="product_details">$12</p>
+                    </div>
+                    <i class="fa fa-remove"></i>
+                </div>
+                <div class="product_user flex justify-between items-center mx-6 border-b border-grays3 border-solid">
+                    <img src="../image/orange.png" alt="" class="w-32">
+                    <div class="productinfo">
+                        <p class="product_name">Fresh Indian Orange</p>
+                        <p class="product_details">$12</p>
+                    </div>
+                    <i class="fa fa-remove"></i>
+                </div>
+            </div>
+            <div class="mt-[20rem]">
+                <div class="flex justify-around">
+                    <p class="product_count"><span>3</span> product</p>
+                    <p class="proucts_price">$36</p>
+                </div>
+                <div class="flex justify-center flex-col items-center mt-4">
+                    <button class="w-[356px] h-12 bg-primary text-white rounded-3xl mt-4">Wishlist</button>
+                    <button class="w-[356px] h-12 bg-primary text-white rounded-3xl mt-4">go to panel</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="small_navbar text-gray-500 text-xs border-b-gray-200 border-b border-solid flex items-center justify-center">
+            <div class="container">
+                <div class="row">
+                    <div class="leftnav_small">
+                        <h5 class="address">
+                            <i class="fa fa-map-marker"></i>
+                            Store Location: Lincoln- 344, Illinois, Chicago, USA
+                        </h5>
+                    </div>
+                    <div class="rightnav_small">
+                        <div class="nav_small_links text-gray-400 pl-3">
+                            <a href="#" class="nav_small_link">
+                                eng
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <a href="#" class="nav_small_link">
+                                usd
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <a href="#" class="nav_small_link">
+                                sign in / sign up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="midle mt-4 flex items-center justify-center md:w-full">
+            <div class="container">
+                <div class="row max-sm:mx-6">
+                    <div class="logo_images max-lg:hidden">
+                        <img src="../image/logoshop.png" alt="" class="logo_images">
+                    </div>
+                    <i class="fa fa-list hidden"></i>
+                    <div class="search_bar max-md:hidden">
+                        <input type="text" placeholder="search" class=" border border-solid border-gray-300 rounded-md p-4 max-w-96 h-12 lg:">
+                        <button class=" bg-primary h-[50px] w-[100px] text-white rounded-r-lg">search</button>
+                    </div>
+                    <div class="navbar_icons">
+                        <div class="flex">
+                            <a href="./Dashborad.html" class="max-md:hidden">
+                                <button class="w-32 text-white h-12 bg-primary rounded-full">dashboard</button>    
+                            </a>
+                            <div class="carts flex ml-[15px]">
+                                <img src="../image/Cart.png" alt="" class="openpopup">
+                                <div class="info ml-[15px]">
+                                    <p class="prices">shopping cart :</p>
+                                    <p class="price font-bold">
+                                        <span>$</span> 00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2 login_btn">
+                        <a href="./public/loginpage.html">
+                            <button class="w-[140px] h-11 bg-primary mt-6 text-white rounded-xl">login
+                                <i class="fa fa-user pl-4 text-lg"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-64 h-full fixed top-0 -left-96 bg-slate-100 z-50 overflow-y-hidden">
+            <div>
+                <input type="text" class="h-12 mt-8 ml-4 p-4 rounded-xl w-56" placeholder="search">
+                <button class="-ml-8"><i class="fa fa-search"></i></button>
+            </div>
+
+            <ul class="flex flex-col items-center justify-center mt-8">
+                <li class="mt-8">home</li>
+                <li class="mt-8">shop</li>
+                <li class="mt-8">pages</li>
+                <li class="mt-8">blog</li>
+                <li class="mt-8">about us</li>
+                <li class="mt-8">contact us</li>
+                <li class="mt-8">dashboard</li>
+            </ul>
+        </section>
+
+        <section class=" bg-[#333333] text-[#999999] h-[80px] mt-[15px] flex items-center justify-center max-md:hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar_left">
+                        <ul class="navlists flex items-center justify-center list-none">
+                            <li class="navlist">home<i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">shop <i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">pages <i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">blog <i class="fa fa-angle-down"></i></li>
+                            <li class="navlist">about us</li>
+                            <li class="navlist">contact us</li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <img src="../image/PhoneCall 1.png" alt="">
+                        <p class="phone_number">(219) 555-0114</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="flex justify-center mt-12">
+        <div class="container">
+            <div class="row max-sm:justify-center">
+                <div class="products flex justify-between flex-wrap max-sm:grid max-sm:grid-cols-2 max-sm:gap-4 max-xd:justify-items-center max-xd:grid-cols-1   mx-3 ">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <section class="newletter flex justify-center bg-[#F7F7F7] mt-14">
+            <div class="container mt-14 mb-12">
+                <div class="row flex-wrap">
+                    <div class="newsletter_left">
+                        <h2 class="newsletter-title mb-14 ">Subcribe our Newsletter</h2>
+                        <p class="newsletter_text text-gray-500">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. <br> Phasellus imperdiet elit eu magna.</p>
+                    </div>
+                    <div class="newsletter_center mt-12">
+                        <input type="email" placeholder="Your email address" class="bg-white h-14 rounded-[46px] w-[460px] pl-6 max-sm:w-80 max-xd:w-52">
+                        <button class="h-[52px] w-40 bg-primary text-white rounded-[40px] -ml-20 max-xd:w-28 max-xd:-ml-6">Subscribe</button>
+                    </div>
+                    <div class="newsletter_right flex justify-between w-44 mt-12">
+                        <a href="https://www.instagram.com/silvershade225?igsh=MXBwN3NjY3lvc3U3bQ==">
+                            <i class="fa fa-instagram text-2xl hover:text-primary transition delay-300"></i>
+                        </a>
+                        <a href="https://github.com/Silvershade1">
+                            <i class="fa fa-github text-2xl hover:text-primary transition delay-300"></i>
+                        </a>
+                        <a href="https://t.me/silver_shade1">
+                            <i class="fa fa-telegram text-2xl hover:text-primary transition delay-300"></i>
+                        </a>
+                        <a href="https://x.com/Silvershad68869?t=zCrJOP6lC4WahOIUtiLQcA&s=09">
+                            <i class="fa fa-twitter text-2xl hover:text-primary transition delay-300"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer bg-[#1A1A1A] text-[#999999] flex justify-center">
+            <div class="container mt-14 mb-10">
+                <div class="row flex-wrap max-lg:flex-col max-lg:items-start">
+                    <div class="account_info mt-12">
+                        <div class="flex mb-8">
+                            <img src="./image/logoweb.png" alt="">
+                            <h2 class="ml-10 hover:text-white text-xl" >Ecobazar</h2>
+                        </div>
+                        <p>Morbi cursus porttitor enim lobortis molestie. <br> Duis gravida turpis dui, eget  <br> bibendum magna congue nec.</p>
+                        <div class="flex items-center mt-6 text-orange-500">
+                            <p class="phone_number">(219) 555-0114</p>
+                            <span class="mr-3 ml-3">or</span>
+                            <p class="id">@silver_shade1</p>
+                        </div>
+                    </div>
+                    <div class="my_account mt-12">
+                        <h3 class="text-white">account</h3>
+                        <ul>
+                            <li><a href="https://github.com/Silvershade1">my github</a> </li>
+                            <li><a href="https://t.me/silver_shade1">my telegram</a> </li>
+                            <li><a href="https://www.instagram.com/silvershade225?igsh=MXBwN3NjY3lvc3U3bQ==">my instagram</a> </li>
+                            <li><a href="https://x.com/Silvershad68869?t=zCrJOP6lC4WahOIUtiLQcA&s=09">my tweeter</a> </li>
+                        </ul>
+                    </div>
+                    <div class="helps mt-12">
+                        <h3 class="text-white">helps</h3>
+                        <ul>
+                            <li>Contact</li>
+                            <li>Faqs</li>
+                            <li>Terms & Condition</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                    <div class="proxys mt-12">
+                        <h3 class="text-white">helps</h3>
+
+                        <ul>
+                            <li>Track Order</li>
+                            <li>Product</li>
+                            <li>Shop</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                    <div class="Categories mt-12">
+                        <h3 class="text-white">helps</h3>
+
+                        <ul>
+                            <li>Fruit & Vegetables</li>
+                            <li>Meat & Fish</li>
+                            <li>Bread & Bakery</li>
+                            <li>Beauty & Health</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright flex justify-center bg-[#1a1a1a]">
+            <div class="container border-t border-solid border-grays6">
+                <div class="row mt-8 flex-wrap">
+                    <div class="copyright_text">
+                        <p class="text-grays6 transition delay-400 ease-in">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+                    </div>
+                    <div class="flex justify-between mt-12">
+                        <img src="./image/Method=ApplePay.png" alt="" class="mr-3">
+                        <img src="./image/Method=Visa.png" alt="" class="mr-3">
+                        <img src="./image/Method=Discover.png" alt="" class="mr-3">
+                        <img src="./image/Method=Mastercard.png" alt="" class="mr-3">
+                        <img src="./image/paycart.png" alt="" class="mr-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>     
+
+
+
+    <script src="../script/shop.js" type="module"></script>
+</body>
+</html>

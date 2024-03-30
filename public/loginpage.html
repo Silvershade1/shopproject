@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../style/loginpage.css">
+</head>
+<body class="bg-green-300 h-[100vh] flex justify-center items-center">
+
+    <section class="flex  justify-center bg-white h-[540px] w-[740px] rounded-2xl max-md:w-[600px] max-sm:w-[400px] max-xd:w-[350px]">
+        <div class="login_page_row">
+            <h2 class="login_form_title text-center text-grays3 mt-14 text-2xl">Sign In</h2>
+            <input type="email" class="email_input block border border-solid border-[#999999] w-[472px] h-11 rounded-xl p-5 mt-8 max-sm:w-[310px] max-xd:w-72"  placeholder="Email">
+            <p class="email_error text-red-500 hidden">Validation Error</p>
+            <input type="password" class="password_input block border border-solid border-[#999999] w-[472px] h-11 rounded-xl p-5 mt-6 max-sm:w-[310px] max-xd:w-72"  placeholder="password">
+            <div class="flex items-center mt-10 mb-8 justify-between max-xd:flex-wrap">
+                <div class="flex items-center max-sm:mr-8">
+                    <input type="checkbox">
+                    <p class="remmber ml-2">Remember me</p>
+                </div>
+                <p class="forget">forget password?</p>
+            </div>
+            <button class="button w-[472px] h-11 bg-primary mt-6 text-white rounded-xl max-sm:w-80 max-xd:w-72">Login</button>
+            <div class="flex justify-center mt-12">
+                <p class="mr-4 text-grays6">Don’t have account?</p>
+                <span>register</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="../script/login.js"></script>
+    <!-- <script src="../node_modules/sweetalert2/dist/sweetalert2.all.js"></script> -->
+
+</body>
+</html>

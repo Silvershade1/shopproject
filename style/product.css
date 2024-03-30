@@ -1,0 +1,4 @@
+main li {
+    list-style: url(./image/Check.svg);
+    margin-top: 1.5rem;
+}

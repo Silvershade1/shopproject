@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="hidden max-md:block">
+    <i class="fa fa-bars ml-12 mt-12 open-navbar"></i>
+    </div>
+    <main class="flex justify-center mt-24">
+        <div class="container flex max-md:justify-center">
+            <section class="rightpanel bg-[#FAFAFA] h-[440px] w-96 border border-grays9 border-solid max-md:w-64  max-md:text-sm max-md:fixed max-md:top-0 max-md:-left-[600px] max-md:h-full overflow-y-hidden">
+                <div class="list-row mt-4 ml-4 mr-4">
+                    <div class="flex justify-between">
+                        <h2 class="title">Navigation</h2>
+                        <div class="hidden max-md:block">
+                        <i class="fa fa-close closebtn"></i>
+                        </div>
+                    </div>
+                    <ul class="text-grays6 my-11">
+                        <li class="dashboardbtn border-solid border-b  border-grays6 mt-3 p-2"><i class="fa fa-list"></i> Dashboard</li>
+                        <li class="orderbtn border-solid border-b  border-grays6 mt-3 p-2"><i class="fa fa-refresh"></i> order History</li>
+                        <li class="wishlistbtn border-solid border-b  border-grays6 mt-3 p-2"><i class="fa fa-heart"></i> wishlist</li>
+                        <li class="ticketbtn border-solid border-b  border-grays6 mt-3 p-2"><i class="fa fa-ticket"></i>ticket</li>
+                        <li class="settingbtn border-solid border-b  border-grays6 mt-3 p-2"><i class="fa fa-cog"></i> setting</li>
+                        <li class="logoutbtn p-2 pt-4"><i class="fa fa-sign-out"></i> log-out</li>
+                    </ul>
+                </div>
+            </section>
+            <section class=" ml-6 panel max-sm:m-0">
+                <div class="dashboard w-[1000px] max-xl:w-[800px] max-lg:w-[600px] max-md:w-[450px] max-sm:w-full">
+                    <div class="dashboard_header flex justify-between items-center max-md:gap-8 max-md:flex-wrap">
+                        <div class="w-full h-72 flex flex-col items-center border border-solid border-graylight max-md:text-sm">
+                            <img src="../image/no-profile-picture-icon.svg" alt="" class="w-28 h-28 rounded-full mb-7 max-md:w-16 max-md:h-16 max-md:mt-5">
+                            <p class="name_user">Dianne Russell</p>
+                            <p class="text-sm text-grays6 my-6 user_role">user</p>
+                            <a href="#" class="text-primary">edit profile</a>
+                        </div>
+                        <div class="border border-solid border-graylight h-72 w-full max-md:text-sm">
+                            <div class="ml-4 mt-4">
+                                <p>Billing Address</p>
+                                <h3 class="my-5 name-user1">Dainne Russell</h3>
+                                <p class="text-grays6 my-5">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                                <p class="user_email">dainne.ressell@gmail.com</p>
+                                <p class="my-5">(671) 555-0110</p>
+                                <a href="#" class="text-primary">edit profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-96 border border-solid border-bordercolor mt-6 rounded-md">
+                        <div class="flex justify-between mt-3 mx-4">
+                            <p>recent order history</p>
+                            <a href="#" class="text-primary">view all</a>
+                        </div>
+                        <div class="bg-graylight text-grays3 p-2 mt-3">
+                            <div class="mx-4 flex justify-between">
+                                <p>order id</p>
+                                <p>name</p>
+                                <p>total price</p>
+                                <p>count</p>
+                            </div>
+                        </div>
+                        <div class="orders mt-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="orderhistory w-[1000px] max-xl:w-[800px] max-lg:w-[600px] max-md:w-[550px] max-sm:w-full  border border-bordercolor border-solid">
+                    <div class="flex justify-between my-3 mx-4">
+                        <h2 class="text-lg"> order history</h2>
+                    </div>
+                    <div class="bg-graylight text-grays3 p-2 mt-3 max-xd:w-80">
+                        <div class="mx-4 flex justify-between gap-12 max-xd:text-xs">
+                            <p>order id</p>
+                            <p>name</p>
+                            <p>total price</p>
+                            <p>count</p>
+                            <p>action</p>
+                        </div>
+                    </div>
+                    <div class="list-products mt-3 max-xd:w-80 text-sm">
+                        <div class="order">
+                            <div class="mx-4 flex justify-between">
+                                <p>#789</p>
+                                <p>banana</p>
+                                <p>$30</p>
+                                <p>Processing</p>
+                                <p class="text-primary">view deatils</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination flex justify-center mt-8">
+
+                    </div>
+                </div>
+                <div class="ticket border border-solid border-bordercolor h-[800px] w-[1000px] max-xl:w-[800px] max-lg:w-[600px] max-md:w-[450px] max-sm:w-full">
+                    <h2 class="text-center text-xl mt-4">tickets</h2>
+                    <div class="flex justify-between mx-4 text-white items-center max-md:flex-wrap-reverse max-xd:mx-5">
+                        <button class="addticket w-40 h-20 bg-green-500 rounded-lg text-white mt-14 max-md:w-full max-md:text-sm">new ticket</button>
+                        <!-- pop up -->
+                        <div id="ticket-popup" class="hidden  justify-center items-center text-grays3"> <div class="popup-content">
+                            <div class="flex justify-between">
+                            <h2 class="popup-title">Submit a Ticket</h2>
+                            <i class="fa fa-close closesbtn text-grays3"></i>
+                            </div>
+                            <form id="ticket-form">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" required class="nameinput">
+                                <label for="description">Describe your issue:</label>
+                                <textarea id="description" name="description" required class="textinput"></textarea>
+                                <button type="button" class="ticketinput bg-primary">Submit Ticket</button>
+                            </form>
+                        </div>
+                    </div>   
+
+                        <div class="flex justify-between gap-5 max-md:gap-3 max-xd:gap-1">
+                            <div class="total-sale w-40 h-28 bg-orange1 rounded-xl mt-16 flex flex-col justify-between max-lg:w-32 max-xd:w-28 max-md:text-sm">
+                                <div class="text-xs flex justify-around">
+                                    <p class="mt-2">all ticket</p>
+                                    <i class="mt-2 fa fa-ellipsis-h"></i>
+                                </div>
+                                <p class="text-center text-2xl allticket_count">12</p>
+                                <p class="text-center mb-2">view all</p>
+                            </div>
+                            <div class="total-sale w-40 h-28 bg-green1 rounded-xl mt-16 flex flex-col justify-between max-lg:w-32 max-xd:w-28 max-md:text-sm">
+                                <div class="text-xs flex justify-around">
+                                    <p class="mt-2">read ticket</p>
+                                    <i class="mt-2 fa fa-ellipsis-h"></i>
+                                </div>
+                                <p class="text-center text-2xl readticket_count">12</p>
+                                <p class="text-center mb-2">view all</p>
+                            </div>
+                            <div class="total-sale w-40 h-28 bg-blue rounded-xl mt-16 flex flex-col justify-between max-lg:w-32 max-xd:w-28 max-md:text-sm">
+                                <div class="text-xs flex justify-around">
+                                    <p class="mt-2">unread ticket</p>
+                                    <i class="mt-2 fa fa-ellipsis-h"></i>
+                                </div>
+                                <p class="text-center text-2xl unreadticket_count">12</p>
+                                <p class="text-center mb-2">view all</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-solid border-bordercolor mt-4 ticketwrap">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+    
+    <script src="../script/userpanel/ticket.js"></script>
+    <script src="../script/userpanel/userproduct.js"></script>
+    <script src="../script/userpanel/logout.js" type="module"></script>
+    <script src="../script/userpanel/dashboard.js"></script>
+    <script src="../script/userpanel/userpanel.js"></script>
+    <script src="../script/userpanel/closenavbar.js"></script>
+    <script src="../package/sweetalert2/dist/sweetalert2.all.js"></script>
+</body>
+</html>

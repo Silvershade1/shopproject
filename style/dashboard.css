@@ -1,0 +1,94 @@
+/* Style your main website content here */
+
+#ticket-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background overlay */
+    z-index: 10; /* Ensure pop-up is on top of other elements */
+    backdrop-filter: blur(10px);
+}
+
+.popup-content {
+    background-color: #fff; /* Pop-up window background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Subtle drop shadow */
+}
+
+.popup-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333; /* Title text color */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc; /* Close button color */
+}
+
+.close-btn:hover {
+    color: #aaa; /* Close button hover color */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 100px; /* Adjust textarea height as needed */
+}
+
+.ticketinput{
+    background-color: #3e8e41; /* Submit button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* pagintion button style */
+
+.pagination button,
+.paginations button {
+    width: 50px;
+	height: 50px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: #4CAF50;
+
+	margin: 5px;
+	transition: 0.4s;
+
+	color: #FFF;
+	font-size: 18px;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rightpanel {
+    transition: all 800ms ease-out;
+}

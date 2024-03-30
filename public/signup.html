@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../style/loginpage.css">
+</head>
+<body class="bg-green-300 h-[100vh] flex justify-center items-center">
+
+    <section class="flex  justify-center bg-white h-[650px] w-[740px] rounded-2xl">
+        <div class="login_page_row">
+            <h2 class="login_form_title text-center text-grays3 mt-14 text-2xl">create account</h2>
+            <input type="text" class="name_input block border border-solid border-[#999999] w-[472px] h-11 rounded-xl p-5 mt-8" placeholder="Name">
+            <input type="email" class="email_input block border border-solid border-[#999999] w-[472px] h-11 rounded-xl p-5 mt-8" placeholder="Email">
+            <p class="email_error text-red-500 ">Validation Error</p>
+            <input type="password" class="password_input block border border-solid border-[#999999] w-[472px] h-11 rounded-xl p-5 mt-6" placeholder="password">
+            <input type="password" class="password_input1 block border border-solid border-[#999999] w-[472px] h-11 rounded-xl p-5 mt-6" placeholder="Confirm Password">
+            <div class="flex items-center mt-10 mb-8 ">
+                    <input type="checkbox">
+                    <p class="remmber ml-2 text-grays6">Accept all terms & Conditions</p>
+            </div>
+            <button class="button w-[472px] h-11 bg-primary mt-6 text-white rounded-xl">Login</button>
+            <div class="flex justify-center mt-8">
+                <p class="mr-4 text-grays6">have a account ?</p>
+                <a href="./loginpage.html">login</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="module" src="../script/signup.js"></script>
+</body>
+</html>

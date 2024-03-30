@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Poppins Light";
+    src: 
+    url("./font/Poppins-Light.ttf");
+}
+:root{
+    --SoftPrimary : #84D187;
+    --HardPrimary: #2C742F;
+    --Warning: #FF8A00;
+    --Danger : #EA4B48;
+    --white : #ffffff;
+    --gray : #666666;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins';
+}
+btn{
+    
+}
