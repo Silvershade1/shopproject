@@ -23,7 +23,6 @@ function displayUsers(allUsers, container, rowsPerPage, pageNumber) {
 
   // Generate HTML for each user and append to container
   paginatedUsers.forEach(user => {
-    console.log(user);
     const userHTML = `
       <div class="user flex justify-between mx-4 h-20 items-center text-grays6 border-b border-bordercolor border-solid max-xd:text-[10px] max-sm:text-xs">
         <h3 class="text-grays3 w-24">${user.name}</h3>
