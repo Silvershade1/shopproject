@@ -6,7 +6,6 @@ const productrow = document.querySelector(".products_row")
 let finalproduct = product.slice(0 , 8)
 finalproduct.forEach((item) => {
     let itemsrc = item.src.slice(1)
-    console.log(itemsrc);
     productrow.insertAdjacentHTML('beforeend' , `<div class="product w-[350px] border border-solid border-gray-300 mt-4">
     <img src="${itemsrc}" alt="">
         <div class="product_infos">
