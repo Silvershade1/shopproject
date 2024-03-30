@@ -39,7 +39,7 @@ function submitTicket() {
   // Retrieve tickets from local storage (handle potential errors)
   let tickets;
   try {
-    tickets = JSON.parse(localStorage.getItem('ticket'));
+    tickets = JSON.parse(localStorage.getItem('ticket')) ?? [];
   } catch (error) {
     tickets = []; // Initialize empty array if parsing fails
   }
@@ -56,7 +56,6 @@ function submitTicket() {
   // Store updated tickets in local storage (handle errors)
   try {
     localStorage.setItem('ticket', JSON.stringify(tickets));
-    console.log('Ticket submitted successfully!');
   } catch (error) {
     console.error('Error storing tickets in localStorage:', error);
   }
@@ -69,7 +68,7 @@ function submitTicket() {
 
 // show count 
 function showcount () {
-    let tickets = JSON.parse(localStorage.getItem("ticket"));
+    let tickets = JSON.parse(localStorage.getItem("ticket")) ?? [];
     allticketcount = tickets.length 
     allticket.innerHTML = allticketcount
     unreadticket.innerHTML = allticketcount - readticketcount
