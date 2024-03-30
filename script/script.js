@@ -75,7 +75,6 @@ openbtn.addEventListener("click" , () => {
 
 //  hacndle admin
 
-console.log(dashboardbtn);
 if (islogin === "true") {
     let userinfo = JSON.parse(localStorage.getItem("userinfo"))
     if (userinfo.role == "admin") {
