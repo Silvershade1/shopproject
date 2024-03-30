@@ -4,11 +4,7 @@
 let dayELem = document.querySelector(".day")
 let hourELem = document.querySelector(".hour")
 let minuteELem = document.querySelector(".minute")
-let navbar = document.querySelector(".navbar_icons")
-let loginbtn = document.querySelector(".login_btn")
-let islogin = localStorage.getItem("islogin")
-let dashboardbtn = document.querySelector(".dashboardbtn")
-let dashboardbtns = document.querySelector(".dashboardbtns")
+let secondELem = document.querySelector(".second")
 
 let endday = "31 mar 2024 13:49:1"
 let end= new Date(endday)
@@ -42,36 +38,3 @@ setInterval(function(){
 
     
 } , 1000)
-
-
-
-// close panel
-
-let closebtn = document.querySelector(".close_btn")
-let popup = document.querySelector(".popup")
-let openbtn = document.querySelector(".openpopup")
-
-
-closebtn.addEventListener("click" , () => {
-    popup.style.display = "none"
-})
-
-openbtn.addEventListener("click" , () => {
-    popup.style.display = "block"
-})
-
-
-
-//  hacndle admin
-
-console.log(dashboardbtn);
-if (islogin === "true") {
-    let userinfo = JSON.parse(localStorage.getItem("userinfo"))
-    if (userinfo.role == "admin") {
-        dashboardbtn.href = "./public/cms.html"
-        dashboardbtns.href = "./public/cms.html"
-    } else {
-        dashboardbtn.href = "./public/Dashborad.html"
-        dashboardbtns.href = "./public/Dashborad.html"
-    }
-}
