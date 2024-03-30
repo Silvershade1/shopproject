@@ -83,14 +83,14 @@
             </div>
         </section>
 
-        <section class="midle mt-4 flex items-center justify-center md:w-full">
+        <section class="midle mt-4 flex items-center justify-center md:w-full ">
             <div class="container">
                 <div class="row max-sm:mx-6">
-                    <div class="logo_images block max-lg:hidden">
+                    <div class="logo_images block max-lg:hidden max-xd:hidden">
                         <img src="../image/logoshop.png" alt="" class="logo_images">
                     </div>
-                    <div class="hidden max-md:block">
-                    <i class="fa fa-list hidden max-md:block"></i>
+                    <div class="max-md:block hidden">
+                        <i class="fa fa-list hidden max-md:block open-navbar"></i>
                     </div>
                     <div class="search_bar max-md:hidden">
                         <input type="text" placeholder="search" class=" border border-solid border-gray-300 rounded-md p-4 max-w-96 h-12 lg:">
@@ -98,11 +98,11 @@
                     </div>
                     <div class="navbar_icons">
                         <div class="flex">
-                            <a href="./public/Dashborad.html" class="max-md:hidden">
+                            <a href="../public/Dashborad.html" class="dashboardbtn max-md:hidden">
                                 <button class="w-32 text-white h-12 bg-primary rounded-full">dashboard</button>    
                             </a>
                             <div class="carts flex ml-[15px]">
-                                <img src="./image/Cart.png" alt="" class="openpopup">
+                                <img src="../image/Cart.png" alt="" class="openpopup">
                                 <div class="info ml-[15px]">
                                     <p class="prices">shopping cart :</p>
                                     <p class="price font-bold">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     <div class="mb-2 login_btn">
-                        <a href="./public/loginpage.html">
+                        <a href="../public/loginpage.html">
                             <button class="w-[140px] h-11 bg-primary mt-6 text-white rounded-xl">login
                                 <i class="fa fa-user pl-4 text-lg"></i>
                             </button>
@@ -122,10 +122,14 @@
                 </div>
             </div>
         </section>
-        <section class="w-64 h-full fixed top-0 -left-96 bg-slate-100 z-50 overflow-y-hidden">
-            <div>
-                <input type="text" class="h-12 mt-8 ml-4 p-4 rounded-xl w-56" placeholder="search">
-                <button class="-ml-8"><i class="fa fa-search"></i></button>
+        <section class="rightpanel w-64 h-full fixed top-0  bg-slate-100 -left-96 z-50 overflow-y-hidden">
+            <div class="flex justify-between items-center">
+                <div>
+                    <input type="text" class="h-12 mt-8 ml-4 p-4 rounded-xl w-40" placeholder="search">
+                    <button class="-ml-8"><i class="fa fa-search"></i></button>
+                </div>
+
+                <i class="fa fa-close mr-4 mt-8 closebtn"></i>
             </div>
 
             <ul class="flex flex-col items-center justify-center mt-8">
@@ -135,7 +139,8 @@
                 <li class="mt-8">blog</li>
                 <li class="mt-8">about us</li>
                 <li class="mt-8">contact us</li>
-                <li class="mt-8">dashboard</li>
+                <li class="loginbtns mt-8"><a href="./public/loginpage.html"></a>login</li>
+                <li class="mt-8 dashboards hidden"><a href="./public/Dashborad.html" class="dashboardbtns">dashboard</a></li>
             </ul>
         </section>
 
@@ -452,6 +457,7 @@
     </footer>     
 
     <script src="../script/product.js" type="module" ></script>
+    <script src="../script/islogin.js"></script>
     <script src="../script/buyproduct.js" type="module" ></script>
 </body>
 </html>
