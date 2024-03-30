@@ -6,7 +6,7 @@ console.log(products)
 
 
 product.forEach((item ) => {
-    products.insertAdjacentHTML('beforeend' , `<div class="product w-[320px] border border-solid border-gray-300 mt-4">
+    products.insertAdjacentHTML('beforeend' , `<div class="product w-80 border border-solid border-gray-300 mt-4">
     <img src="${item.src}" alt="">
         <div class="product_infos">
             <div class="product_info">
