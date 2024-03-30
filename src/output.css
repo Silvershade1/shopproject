@@ -1672,10 +1672,6 @@ btn{
     width: 600px;
   }
 
-  .max-lg\:w-52 {
-    width: 13rem;
-  }
-
   .max-lg\:max-w-\[800px\] {
     max-width: 800px;
   }
@@ -1795,10 +1791,6 @@ btn{
     width: 100%;
   }
 
-  .max-md\:w-40 {
-    width: 10rem;
-  }
-
   .max-md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1856,6 +1848,11 @@ btn{
   .max-sm\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .max-sm\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .max-sm\:ml-0 {
@@ -1926,6 +1923,14 @@ btn{
     width: 100%;
   }
 
+  .max-sm\:w-96 {
+    width: 24rem;
+  }
+
+  .max-sm\:w-9 {
+    width: 2.25rem;
+  }
+
   .max-sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1966,6 +1971,16 @@ btn{
   .max-xd\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .max-xd\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .max-xd\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .max-xd\:-ml-6 {
@@ -2039,6 +2054,10 @@ btn{
 
   .max-xd\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .max-xd\:gap-4 {
+    gap: 1rem;
   }
 
   .max-xd\:text-\[10px\] {
