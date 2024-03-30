@@ -1,4 +1,3 @@
-'use strict'
 // timer
 // select element
 
@@ -10,6 +9,9 @@ let navbar = document.querySelector(".navbar_icons")
 let loginbtn = document.querySelector(".login_btn")
 let islogin = localStorage.getItem("islogin")
 let dashboardbtn = document.querySelector(".dashboardbtn")
+let dashboardbtns = document.querySelector(".dashboardbtns")
+let dashboard = document.querySelector(".dashboards")
+let loginsbtn = document.querySelector(".loginbtns")
 
 let endday = "31 mar 2024 13:49:1"
 let end= new Date(endday)
@@ -48,6 +50,8 @@ window.addEventListener("load" , () =>  {
     if (islogin) {
         navbar.style.display = "block"
         loginbtn.style.display = "none"
+        dashboard.style.display = "block"
+        loginsbtn.style.display = "none"
     }
 })
 
@@ -76,7 +80,9 @@ if (islogin === "true") {
     let userinfo = JSON.parse(localStorage.getItem("userinfo"))
     if (userinfo.role == "admin") {
         dashboardbtn.href = "./public/cms.html"
+        dashboardbtns.href = "./public/cms.html"
     } else {
         dashboardbtn.href = "./public/Dashborad.html"
+        dashboardbtns.href = "./public/Dashborad.html"
     }
 }
