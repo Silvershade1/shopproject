@@ -1,10 +1,10 @@
 // timer
 // select element
 
-let dayELem = document.querySelector(".day")
-let hourELem = document.querySelector(".hour")
-let minuteELem = document.querySelector(".minute")
-let secondELem = document.querySelector(".second")
+let dayELem = document.querySelector(".day");
+let hourELem = document.querySelector(".hour");
+let minuteELem = document.querySelector(".minute");
+let secondELem = document.querySelector(".second");
 
 let endday = "31 mar 2024 13:49:1"
 let end= new Date(endday)
