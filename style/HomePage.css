@@ -110,4 +110,6 @@
 }
 
 
-/* about me*/
+.rightpanel {
+    transition: all 700ms ease-in-out;
+}
