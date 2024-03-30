@@ -1,0 +1,4 @@
+mode_moudles
+package-lock.json
+.vscode
+docker/volumes
