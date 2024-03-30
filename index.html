@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fresh Market</title>
+    <title>master shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/HomePage.css">
     <link rel="stylesheet" href="./style/style.css">
@@ -88,7 +88,7 @@
                     <div class="logo_images max-lg:hidden max-xd:hidden">
                         <img src="./image/logoshop.png" alt="" class="logo_images">
                     </div>
-                    <i class="fa fa-list hidden max-md:block"></i>
+                    <i class="fa fa-list hidden max-md:block open-navbar"></i>
                     <div class="search_bar max-md:hidden">
                         <input type="text" placeholder="search" class=" border border-solid border-gray-300 rounded-md p-4 max-w-96 h-12 lg:">
                         <button class=" bg-primary h-[50px] w-[100px] text-white rounded-r-lg">search</button>
@@ -119,10 +119,14 @@
                 </div>
             </div>
         </section>
-        <section class="w-64 h-full fixed top-0 -left-96 bg-slate-100 z-50 overflow-y-hidden">
-            <div>
-                <input type="text" class="h-12 mt-8 ml-4 p-4 rounded-xl w-56" placeholder="search">
-                <button class="-ml-8"><i class="fa fa-search"></i></button>
+        <section class="rightpanel w-64 h-full fixed top-0  bg-slate-100 -left-96 z-50 overflow-y-hidden">
+            <div class="flex justify-between items-center">
+                <div>
+                    <input type="text" class="h-12 mt-8 ml-4 p-4 rounded-xl w-40" placeholder="search">
+                    <button class="-ml-8"><i class="fa fa-search"></i></button>
+                </div>
+
+                <i class="fa fa-close mr-4 mt-8 closebtn"></i>
             </div>
 
             <ul class="flex flex-col items-center justify-center mt-8">
@@ -132,7 +136,8 @@
                 <li class="mt-8">blog</li>
                 <li class="mt-8">about us</li>
                 <li class="mt-8">contact us</li>
-                <li class="mt-8">dashboard</li>
+                <li class="loginbtns mt-8"><a href="./public/loginpage.html"></a>login</li>
+                <li class="mt-8 dashboards hidden"><a href="./public/Dashborad.html" class="dashboardbtns">dashboard</a></li>
             </ul>
         </section>
 
@@ -687,7 +692,8 @@
             </div>
         </footer>        
 
-        <script  src="./script/script.js"></script>
+        <script src="./script/userpanel/closenavbar.js"></script>
+        <script src="./script/script.js""></script> 
         <script type="module" src="./script/showproduct.js"></script>
 </body>
 </html>
